@@ -4,8 +4,7 @@
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.localeUnderscoreDelimited' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:g='http://schemas.google.com/g/2005'>
 <b:include name='theme-dark-mode'/>
 <head>
-  <!-- 네이버 웹마스터 도구 소유 확인을 위해 YOUR_NAVER_SITE_VERIFICATION_CODE_HERE를 실제 코드로 변경하세요. -->
-  <meta content='YOUR_NAVER_SITE_VERIFICATION_CODE_HERE' name='naver-site-verification'/>
+  <!-- 사용자 안내: 네이버 웹마스터 도구를 사용하시는 경우, 여기에 네이버 소유 확인 메타 태그를 추가하세요. 예: <meta name="naver-site-verification" content="YOUR_CODE_HERE"/> -->
     <b:include name='theme-head'/>
 <b:if cond='!data:view.isLayoutMode'>
 <!-- Theme CSS Style -->
@@ -17,12 +16,12 @@
 
 /* Base body and html styles */
 html, body {
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Noto Sans KR", sans-serif !important; /* Important kept as it was the last one */
-  font-size: 16px !important; /* Important kept */
-  background-color: #ffffff !important; /* Important kept */
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Noto Sans KR", sans-serif !important;
+  font-size: 16px !important;
+  background-color: #ffffff !important;
 }
 
-/* Empty Headings (Consolidated) */
+/* Empty Headings */
 #main-wrapper h2:empty,
 #main-wrapper h3:empty,
 #main-wrapper h4:empty,
@@ -31,17 +30,17 @@ html, body {
   display:none !important;
 }
 
-/* Social Share Buttons (Consolidated & Simplified) */
+/* Social Share Buttons */
 ul.litespot-pro-share-links {
-  display: flex !important; /* Kept from "항상 공유 리스트 펼치기" */
+  display: flex !important;
   flex-wrap: wrap;
-  visibility: visible !important; /* Kept from "항상 공유 리스트 펼치기" */
-  opacity: 1 !important; /* Kept from "항상 공유 리스트 펼치기" */
-  max-height: none !important; /* Kept from "항상 공유 리스트 펼치기" */
+  visibility: visible !important;
+  opacity: 1 !important;
+  max-height: none !important;
 }
 ul.litespot-pro-share-links li {
-  display: inline-flex !important; /* Kept from "항상 공유 리스트 펼치기" */
-  padding: 0 5px 0 0; /* Original spacing */
+  display: inline-flex !important;
+  padding: 0 5px 0 0;
 }
 .rtl ul.litespot-pro-share-links li {
   padding: 0 0 0 5px;
@@ -54,115 +53,114 @@ ul.litespot-pro-share-links li a {
   justify-content: center !important;
   padding: 0 !important;
   line-height: 0 !important;
-  color: #fff; /* Default for most buttons */
-  margin: 5px 0 0; /* Original margin */
+  color: #fff;
+  margin: 5px 0 0;
   text-decoration: none;
 }
 ul.litespot-pro-share-links li a:hover {
   opacity: .9;
 }
-ul.litespot-pro-share-links li.has-span a { /* For buttons that might have text originally */
-  width: 34px !important; /* Ensure uniform size even if span exists */
+ul.litespot-pro-share-links li.has-span a {
+  width: 34px !important;
   justify-content: center !important;
 }
 ul.litespot-pro-share-links li a span {
-  display: none !important; /* Hide optional span text */
+  display: none !important;
 }
 
-/* Kakao Button (Consolidated) */
+/* Kakao Button */
 .litespot-pro-share-links li.kakao {
-  order: -100; /* Ensure Kakao is first */
+  order: -100;
 }
 .litespot-pro-share-links li.kakao a {
-  background-color: #FEE500 !important; /* Kakao yellow */
+  background-color: #FEE500 !important;
   color: #000 !important;
   position: relative;
 }
 .litespot-pro-share-links li.kakao a::before {
   content: "" !important;
   display: block !important;
-  width: 20px !important;  /* From latest Kakao icon style */
-  height: 20px !important; /* From latest Kakao icon style */
-  background-image: url('https://cdn-icons-png.flaticon.com/512/3669/3669978.png') !important; /* From "Kakao 버튼 복구용 CSS (updated)" */
+  width: 20px !important;
+  height: 20px !important;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3669/3669978.png') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background-size: 20px 20px !important; /* Explicit size */
+  background-size: 20px 20px !important;
 }
 
-/* X (Twitter) Button (Consolidated - using X logo) */
+/* X (Twitter) Button */
 .litespot-pro-share-links li.twitter a {
   background-color: #000 !important;
 }
-.litespot-pro-share-links.social li.twitter.has-span > a.twitter.btn.window-ify::before, /* Specific selector for X logo */
-.litespot-pro-share-links li.twitter a::before { /* General fallback for X logo */
+.litespot-pro-share-links.social li.twitter.has-span > a.twitter.btn.window-ify::before,
+.litespot-pro-share-links li.twitter a::before {
   content: "" !important;
   display: inline-block !important;
   width: 20px !important;
   height: 20px !important;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0a/X_logo_2023_%28white%29.svg') !important; /* White X logo from the most specific rule */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0a/X_logo_2023_%28white%29.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: contain !important;
 }
-.litespot-pro-share-links li.twitter a i { /* Hide FontAwesome icon if present */
+.litespot-pro-share-links li.twitter a i {
   display: none !important;
 }
 
-
-/* Share button toggle behavior (Show first 4, then expand) */
-ul.litespot-pro-share-links.show-hidden li {display:none !important;} /* Default hide when toggled */
-ul.litespot-pro-share-links.show-hidden li.show-hid, /* The toggle button itself */
-ul.litespot-pro-share-links.show-hidden li:not(.show-hid):nth-child(-n+4) { /* First 4 actual share buttons */
+/* Share button toggle behavior */
+ul.litespot-pro-share-links.show-hidden li {display:none !important;}
+ul.litespot-pro-share-links.show-hidden li.show-hid,
+ul.litespot-pro-share-links.show-hidden li:not(.show-hid):nth-child(-n+4) {
     display:inline-flex !important;
 }
-.litespot-pro-share-links li.show-hid a { /* Toggle button style */
+.litespot-pro-share-links li.show-hid a {
   background-color:var(--rgba-gray);
   font-size:14px;
   color:rgba(155,155,155,0.8);
 }
-.litespot-pro-share-links li.show-hid a:before{ /* Toggle button icon (minus) */
+.litespot-pro-share-links li.show-hid a:before{
   content:'\f068';font-family:'Font Awesome 5 Free';font-weight:900;
 }
-ul.litespot-pro-share-links.show-hidden li.show-hid a:before{ /* Toggle button icon when hidden (plus) */
+ul.litespot-pro-share-links.show-hidden li.show-hid a:before{
   content:'\f067';
 }
 
-/* Blockquote (Consolidated - using "Blockquote Re-Design" as base, as it's the last one and seems intentional) */
+/* Blockquote */
 .post-body blockquote,
 blockquote.custom-quote {
   position:relative;
   margin:1.5em 0;
-  padding:1.2em 1.5em 1.2em 3.5em; /* From "Blockquote Re-Design" */
-  background:#f5f7fa; /* From "Blockquote Re-Design" */
-  border: none; /* Removing borders from previous styles */
-  border-left:4px solid #1e90ff; /* From "Blockquote Re-Design" */
-  color:#333; /* From "Blockquote Re-Design" */
-  font-style:normal !important; /* Removing italics, from "인용구 기울임 제거" */
-  font-size: 18px; /* General consensus, can be adjusted if needed */
-  border-radius: 0; /* Removing border-radius from previous styles, not in Re-Design */
-  box-shadow: none; /* Removing box-shadow from previous styles, not in Re-Design */
+  padding:1.2em 1.5em 1.2em 3.5em;
+  background:#f5f7fa;
+  border: none;
+  border-left:4px solid #1e90ff;
+  color:#333;
+  font-style:normal !important;
+  font-size: 18px;
+  border-radius: 0;
+  box-shadow: none;
 }
-.post-body blockquote:before, /* From "Blockquote Re-Design" */
+.post-body blockquote:before,
 blockquote.custom-quote:before {
   content:"\201C";
   position:absolute;
   top:0.1em;
   left:0.6em;
   font-family:Georgia,serif;
-  font-size:3em; /* From "Blockquote Re-Design" */
-  color:#1e90ff; /* From "Blockquote Re-Design" */
+  font-size:3em;
+  color:#1e90ff;
   line-height:1;
-  display: block; /* Ensuring it displays */
+  display: block;
 }
-.post-body blockquote > p:first-child, /* Keep this if titles within blockquotes are desired */
+.post-body blockquote > p:first-child,
 blockquote.custom-quote > p:first-child {
   border-bottom: 2px solid #a4a4a4;
   font-weight: 700;
   font-size: 1.1em;
   margin-bottom: 0.4em;
-  padding-bottom: 0.4em; /* Added for spacing */
+  padding-bottom: 0.4em;
 }
-.post-body blockquote cite, /* From "Blockquote Re-Design" */
+.post-body blockquote cite,
 blockquote.custom-quote cite {
   display:block;
   margin-top:0.8em;
@@ -171,16 +169,16 @@ blockquote.custom-quote cite {
   text-align:right;
 }
 
-/* Horizontal Rule Style (Consolidated) */
+/* Horizontal Rule Style */
 .post-body hr, hr {
   border: none;
-  border-top: 1px solid #a0c4ff; /* soft blue */
+  border-top: 1px solid #a0c4ff;
   margin: 2em 0;
   opacity: 0.6;
 }
 
-/* Button Hover Common CSS (Consolidated) */
-.btn-hover { /* Keep only if this class is actually used elsewhere, otherwise specific button styles are enough */
+/* Button Hover Common CSS */
+.btn-hover {
   padding: 0 40px;
   font-size: 16px;
   font-weight: 600;
@@ -199,11 +197,11 @@ blockquote.custom-quote cite {
   transition: all .4s ease-in-out;
 }
 .btn-hover:focus { outline: none; }
-.btn-hover.color-33 { /* Example, keep if used */
+.btn-hover.color-33 {
   background-image: linear-gradient(to right, #00b4db, #0083b0, #00b4db);
 }
 
-/* Progress Bar (Consolidated) */
+/* Progress Bar */
 #mybar {
   position: fixed;
   top: 0;
@@ -215,56 +213,52 @@ blockquote.custom-quote cite {
   background: linear-gradient(135deg, #fa709a, #fee140);
 }
 
-/* Toggle Buttons (Darkmode/Search - Consolidated) */
-.tgl-wrap a.tgl-style, /* Base for specific toggles if needed */
+/* Toggle Buttons (Darkmode/Search) */
+.tgl-wrap a.tgl-style,
 .tgl-style.darkmode-toggle,
 .tgl-style.show-search {
-    display: inline-flex !important; /* from more specific rule */
-    align-items: center !important; /* from more specific rule */
-    justify-content: center !important; /* from more specific rule */
-    width: 38px !important; /* from more specific rule */
-    height: 38px !important; /* from more specific rule */
-    background-color: var(--rgba-gray) !important; /* from more specific rule, potentially var(--surface-1) could be used if it's preferred */
-    border: 1px solid var(--neutral-300) !important; /* from more specific rule */
-    border-radius: var(--radius) !important; /* from more specific rule, 8px is also defined */
-    padding: 0 !important; /* from more specific rule, 0.5rem was also defined */
-    margin-right: 0.5rem; /* Only for .tgl-style.darkmode-toggle, .tgl-style.show-search */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    background-color: var(--rgba-gray) !important;
+    border: 1px solid var(--neutral-300) !important;
+    border-radius: var(--radius) !important;
+    padding: 0 !important;
+    margin-right: 0.5rem;
 }
 .tgl-style.darkmode-toggle svg,
 .tgl-style.show-search svg {
-    width: 1rem !important; /* from more specific rule */
-    height: 1rem !important; /* from more specific rule */
-    stroke-width: 2 !important; /* from more specific rule */
+    width: 1rem !important;
+    height: 1rem !important;
+    stroke-width: 2 !important;
 }
-/* Remove redundant .tgl-wrap a.tgl-style if covered by the above */
 
-/* Footer Menu (Consolidated) */
-/* Base for footer menu background */
+/* Footer Menu */
 .footerbar.flex-center .container.row-xl #footer-menu,
-.footerbar .container.row-xl #footer-menu { /* Covers both selectors used */
+.footerbar .container.row-xl #footer-menu {
     background-color: #ffffff !important;
 }
-/* Base for footer menu links */
-#footer-wrapper .footer-menu .link-list a, /* Original theme selector */
-.footerbar.flex-center .container.row-xl #footer-menu .link-list a, /* For flex-center variant */
-.footerbar .container.row-xl #footer-menu .link-list a { /* For general variant */
+#footer-wrapper .footer-menu .link-list a,
+.footerbar.flex-center .container.row-xl #footer-menu .link-list a,
+.footerbar .container.row-xl #footer-menu .link-list a {
     font-weight: bold !important;
-    color: #ffffff !important; /* From "강제 적용" */
+    color: #ffffff !important;
 }
-/* Hover for footer menu links */
 #footer-wrapper .footer-menu .link-list a:hover,
 .footerbar.flex-center .container.row-xl #footer-menu .link-list a:hover,
 .footerbar .container.row-xl #footer-menu .link-list a:hover {
-    color: var(--footerbar-hover-color) !important; /* Using variable, #dddddd was also used */
+    color: var(--footerbar-hover-color) !important;
 }
 
-/* Footer bar general style (Consolidated) */
+/* Footer bar general style */
 .footerbar.flex-center {
   background-color: #202124 !important;
   color: #ffffff !important;
 }
 
-/* TOC Styling - Keeping the last defined set as it's most specific (v39 - Roman Numerals & Weight) */
+/* TOC Styling */
 .post-toc {
   border:1px solid #d9d9d9;
   border-left:4px solid #1e73be;
@@ -275,13 +269,13 @@ blockquote.custom-quote cite {
   position:relative;
   font-size:14px;
   line-height:1.6;
-  text-align:left; /* from layout adjustments */
+  text-align:left;
 }
 .post-toc .toc-title {
   color:#1e73be;
   font-weight:600;
   margin-right:8px;
-  font-size:22px !important; /* from v35 */
+  font-size:22px !important;
 }
 .post-toc .toc-toggle {
   position:absolute;
@@ -292,48 +286,48 @@ blockquote.custom-quote cite {
   cursor:pointer;
   color:#1e73be;
   font-weight:bold;
-  font-size:52px !important; /* from v37 */
-  line-height:1 !important; /* from v37 */
+  font-size:52px !important;
+  line-height:1 !important;
 }
 .post-toc ol {
   list-style:none !important;
-  counter-reset:tocitem; /* Changed from section to tocitem based on v39 */
-  margin:8px 0 0 1.6em; /* from v37 */
+  counter-reset:tocitem;
+  margin:8px 0 0 1.6em;
   padding:0;
 }
 .post-toc li {
   list-style:none !important;
-  margin:0.35em 0; /* from v37 */
+  margin:0.35em 0;
 }
 .post-toc li.lv-h2,
-.post-toc li.lv-h3 { /* Combined H2 and H3 for Roman numerals as per v39 */
+.post-toc li.lv-h3 {
   counter-increment:tocitem;
   padding-left:1.8em;
   position:relative;
 }
 .post-toc li.lv-h2::before,
 .post-toc li.lv-h3::before {
-  content: counter(tocitem, upper-roman) "."; /* Roman numerals for H2/H3 from v39 */
+  content: counter(tocitem, upper-roman) ".";
   position:absolute;
   left:0;
-  font-weight:700; /* From v39 */
+  font-weight:700;
 }
 .post-toc li.lv-h2 > a,
 .post-toc li.lv-h3 > a {
-  font-weight:700 !important; /* From v39 */
+  font-weight:700 !important;
 }
 .post-toc li.lv-h4,
 .post-toc li.lv-h5,
 .post-toc li.lv-h6 {
-  padding-left:0; /* From v39, overriding previous padding */
-  margin-left:1.4em; /* Indentation from v39 */
+  padding-left:0;
+  margin-left:1.4em;
 }
 .post-toc li.lv-h4 > a,
 .post-toc li.lv-h5 > a,
 .post-toc li.lv-h6 > a {
-  font-weight:400 !important; /* From v39 */
+  font-weight:400 !important;
 }
-.post-toc li.lv-h4::before, /* Remove numbering for lower levels as per v39 */
+.post-toc li.lv-h4::before,
 .post-toc li.lv-h5::before,
 .post-toc li.lv-h6::before {
   content:'' !important;
@@ -346,23 +340,23 @@ blockquote.custom-quote cite {
 .post-toc a:hover {color:#1e73be;}
 .post-toc a.active {
   color:#1e73be;
-  font-weight:600; /* Base active style, v39 specific weights will override */
+  font-weight:600;
   text-decoration:underline;
 }
 .post-toc.collapsed ol {display:none;}
-h2,h3,h4 {scroll-margin-top:80px;} /* Keep for scroll behavior */
-.post-toc li::marker{content:''!important;} /* Global marker removal from v35 */
+h2,h3,h4 {scroll-margin-top:80px;}
+.post-toc li::marker{content:''!important;}
 
-/* Paragraph and Heading Font Size Adjustments (Consolidated from v41, v42) */
+/* Paragraph and Heading Font Size Adjustments */
 .post-body p,
 .post-body > p:first-of-type {
-  text-indent:0 !important; /* Removing indent from v42 */
-  margin-top:0; /* From v40, if still relevant */
+  text-indent:0 !important;
+  margin-top:0;
 }
 .post-body h4,
 .post-body h5,
 .post-body h6 {
-  font-size:calc(100% + 2px) !important; /* From v41 */
+  font-size:calc(100% + 2px) !important;
 }
 
 /* Remaining CSS from original LiteSpot theme */
@@ -503,7 +497,6 @@ Author   :  Templateify
 <Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px raleway, Arial, sans-serif !important"  value="normal 400 14px raleway, Arial, sans-serif !important"/>
 <Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px 'Pretendard', Arial, sans-serif !important"  value="normal 700 14px 'Pretendard', Arial, sans-serif !important"/>
 */
-/*-- Google Fonts (Raleway) have been removed as Pretendard is now the primary font --*/
 /*-- Font Awesome Free 5.15.2 --*/
 @font-face{font-family:"Font Awesome 5 Brands";font-display:swap;font-style:normal;font-weight:400;font-display:block;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:"Font Awesome 5 Brands";font-weight:400}
 @font-face{font-family:"Font Awesome 5 Free";font-display:swap;font-style:normal;font-weight:400;font-display:block;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/webfonts/fa-regular-400.svg#fontawesome) format("svg")}.far{font-family:"Font Awesome 5 Free";font-weight:400}
@@ -3361,12 +3354,12 @@ body#layout #hidden-widgets{display:none!important}
                       <b:widget-setting name='text-10'>Mega Menu</b:widget-setting>
                       <b:widget-setting name='shownum'>1</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <!-- 사용자 안내: 아래 링크들은 실제 블로그의 카테고리(라벨) URL로 수정하거나, 불필요하면 삭제하십시오. -->
-                      <b:widget-setting name='link-1'>#YOUR_CATEGORY_LINK_1</b:widget-setting>
-                      <b:widget-setting name='link-2'>#YOUR_CATEGORY_LINK_2</b:widget-setting>
+                        <!-- 사용자 안내: 아래 링크들은 실제 블로그의 카테고리(라벨) URL로 수정하거나, 불필요하면 해당 <b:widget-setting name='link-x'> 태그를 삭제하십시오. 예시: <b:widget-setting name='link-1'>/search/label/카테고리명</b:widget-setting> -->
+                        <b:widget-setting name='link-1'>#</b:widget-setting>
+                        <b:widget-setting name='link-2'>#</b:widget-setting>
                       <b:widget-setting name='link-0'>{homepage}</b:widget-setting>
                       <b:widget-setting name='link-11'>#</b:widget-setting>
-                       <!-- 사용자 안내: Mega Menu 예시입니다. $label={recent} 부분을 실제 레이블명으로 변경하거나, 메뉴 항목을 직접 구성하십시오. -->
+                         <!-- 사용자 안내: Mega Menu는 특정 라벨의 게시물을 가져옵니다. '$label={recent}' 부분을 실제 라벨명으로 변경하십시오. (예: $label={뉴스}) 또는 메뉴 항목을 직접 구성하십시오. -->
                       <b:widget-setting name='link-10'>{getContent} $label={recent}</b:widget-setting>
                       <b:widget-setting name='text-9'>_RTL Version (데모)</b:widget-setting>
                       <b:widget-setting name='link-9'>#</b:widget-setting>
@@ -3374,7 +3367,7 @@ body#layout #hidden-widgets{display:none!important}
                       <b:widget-setting name='link-7'>#</b:widget-setting>
                       <b:widget-setting name='link-8'>#</b:widget-setting>
                       <b:widget-setting name='link-6'>#</b:widget-setting>
-                      <b:widget-setting name='link-3'>#YOUR_CATEGORY_LINK_3</b:widget-setting>
+                        <b:widget-setting name='link-3'>#</b:widget-setting>
                       <b:widget-setting name='link-4'>#</b:widget-setting>
                       <b:widget-setting name='text-1'>마케팅 (예시)</b:widget-setting>
                       <b:widget-setting name='text-0'>홈</b:widget-setting>
@@ -3437,8 +3430,9 @@ body#layout #hidden-widgets{display:none!important}
     <!-- ticker Wrapper -->
     <div class='flex-center' id='ticker-wrapper'>
       <b:section class='ticker container row-x1' id='ticker' maxwidgets='1' name='ticker News' showaddelement='yes'>
-        <b:widget id='PopularPosts1' locked='false' title='인기글:' type='PopularPosts' version='2' visible='true'>
+        <b:widget id='PopularPosts1' locked='false' title='주요 소식' type='PopularPosts' version='2' visible='true'>
           <b:widget-settings>
+            <!-- 사용자 안내: 헤드라인 뉴스처럼 표시될 게시물 수를 설정합니다. (기본값: 4) -->
             <b:widget-setting name='numItemsToShow'>4</b:widget-setting>
             <b:widget-setting name='showThumbnails'>false</b:widget-setting>
             <b:widget-setting name='showSnippets'>false</b:widget-setting>
@@ -3601,24 +3595,27 @@ body#layout #hidden-widgets{display:none!important}
       <main id='main-wrapper'>
         <b:class cond='(data:view.isHomepage and (data:widgets any w =&gt; w.sectionId == &quot;content-section-2&quot;))' name='has-cs2'/>
          <b:section class='content-section' cond='data:view.isLayoutMode or (data:view.isHomepage and (data:widgets any w =&gt; w.sectionId == &quot;content-section-1&quot;))' id='content-section-1' name='Content Section 1' showaddelement='yes'>
-           <b:widget id='HTML10' locked='false' title='리뷰' type='HTML' visible='true'>
+           <b:widget id='HTML10' locked='false' title='게시물 목록 (블록 타입)' type='HTML' visible='true'>
              <b:widget-settings>
+               <!-- 사용자 안내: 표시할 게시물 수($results), 라벨($label), 표시 형식($type)을 설정합니다. 예: $label={카테고리명} -->
                <b:widget-setting name='content'>{getContent} $results={4} $label={recent} $type={block}</b:widget-setting>
              </b:widget-settings>
              <b:includable id='main'>
       <b:include name='html-content'/>
     </b:includable>
            </b:widget>
-           <b:widget id='HTML12' locked='false' title='가젯' type='HTML' visible='true'>
+           <b:widget id='HTML12' locked='false' title='게시물 목록 (그리드 타입)' type='HTML' visible='true'>
              <b:widget-settings>
+               <!-- 사용자 안내: 표시할 게시물 수($results), 라벨($label), 표시 형식($type)을 설정합니다. 예: $label={카테고리명} -->
                <b:widget-setting name='content'>{getContent} $results={3} $label={recent} $type={grid}</b:widget-setting>
              </b:widget-settings>
              <b:includable id='main'>
       <b:include name='html-content'/>
     </b:includable>
            </b:widget>
-           <b:widget id='HTML14' locked='false' title='{ads}' type='HTML' visible='true'>
+           <b:widget id='HTML14' locked='false' title='광고 영역 (본문 상단)' type='HTML' visible='true'>
              <b:widget-settings>
+               <!-- 사용자 안내: 이 위젯에 광고 코드를 삽입하거나, 이미지를 추가하여 배너로 활용할 수 있습니다. -->
              </b:widget-settings>
              <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6155,16 +6152,18 @@ height: 100%;
       <b:include name='html-content'/>
     </b:includable>
           </b:widget>
-          <b:widget id='HTML11' locked='false' title='Videos' type='HTML' visible='false'>
+           <b:widget id='HTML11' locked='false' title='게시물 목록 (비디오 타입)' type='HTML' visible='false'>
             <b:widget-settings>
+               <!-- 사용자 안내: 표시할 게시물 수($results), 라벨($label), 표시 형식($type)을 설정합니다. 예: $label={비디오카테고리} -->
               <b:widget-setting name='content'>{getContent} $results={3} $label={recent} $type={video}</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
     </b:includable>
           </b:widget>
-          <b:widget id='HTML13' locked='false' title='Android' type='HTML' visible='false'>
+           <b:widget id='HTML13' locked='false' title='게시물 목록 (리스트 타입)' type='HTML' visible='false'>
             <b:widget-settings>
+               <!-- 사용자 안내: 표시할 게시물 수($results), 라벨($label), 표시 형식($type)을 설정합니다. 예: $label={카테고리명} -->
               <b:widget-setting name='content'>{getContent} $results={3} $label={recent} $type={list}</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
@@ -6183,8 +6182,9 @@ height: 100%;
          <b:tag cond='data:view.isLayoutMode or data:view.isPost' id='custom-ads' name='div'>
         </b:tag>
         <b:section cond='data:view.isLayoutMode or (data:view.isPost and (data:widgets.HTML any w =&gt; w.sectionId == &quot;litespot-pro-related-posts&quot;))' id='litespot-pro-related-posts' maxwidgets='1' name='Related Posts' showaddelement='yes'>
-          <b:widget id='HTML101' locked='true' title='관련글' type='HTML' visible='true'>
+          <b:widget id='HTML101' locked='true' title='관련 게시물' type='HTML' visible='true'>
             <b:widget-settings>
+              <!-- 사용자 안내: 관련 게시물로 표시될 게시물 수를 설정합니다. ($results={숫자}) -->
               <b:widget-setting name='content'>$results={6}</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
@@ -6193,8 +6193,9 @@ height: 100%;
           </b:widget>
         </b:section>
         <b:section cond='data:view.isLayoutMode or (data:view.isPost and (data:widgets any w =&gt; w.sectionId == &quot;litespot-pro-post-footer-ads&quot;))' id='litespot-pro-post-footer-ads' maxwidgets='1' name='Post ADS 3' showaddelement='yes'>
-          <b:widget id='HTML9' locked='false' title='최근 리뷰' type='HTML' visible='true'>
+          <b:widget id='HTML9' locked='false' title='광고 영역 (관련 게시물 하단)' type='HTML' visible='true'>
             <b:widget-settings>
+              <!-- 사용자 안내: 이 위젯에 광고 코드를 삽입하거나, 이미지를 추가하여 배너로 활용할 수 있습니다. -->
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6284,8 +6285,9 @@ height: 100%;
               <b:include name='html-content'/>
             </b:includable>
           </b:widget>
-          <b:widget id='HTML2' locked='false' title='{ads}' type='HTML' visible='true'>
+           <b:widget id='HTML2' locked='false' title='광고 영역 (사이드바)' type='HTML' visible='true'>
             <b:widget-settings>
+               <!-- 사용자 안내: 이 위젯에 광고 코드를 삽입하거나, 이미지를 추가하여 배너로 활용할 수 있습니다. -->
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6341,8 +6343,9 @@ height: 100%;
     <!-- Footer Ads -->
     <div class='flex-center' id='footer-ads-wrap'>
       <b:section class='footer-ads container row-x1' id='footer-ads' maxwidgets='1' name='Footer ADS' showaddelement='yes'>
-        <b:widget id='HTML33' locked='false' title='Advertisement' type='HTML' visible='true'>
+        <b:widget id='HTML33' locked='false' title='광고 영역 (푸터)' type='HTML' visible='true'>
           <b:widget-settings>
+            <!-- 사용자 안내: 이 위젯에 광고 코드를 삽입하거나, 이미지를 추가하여 배너로 활용할 수 있습니다. -->
           </b:widget-settings>
           <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6357,15 +6360,17 @@ height: 100%;
       <b:class cond='data:widgets none w =&gt; w.sectionId == &quot;litespot-pro-about-section&quot;' name='no-widget'/>
       <div class='container row-x1'>
         <b:section class='litespot-pro-about-section' id='litespot-pro-about-section' maxwidgets='2' name='About Section' showaddelement='yes'>
-          <b:widget id='Image101' locked='true' title='About Us' type='Image' visible='true'>
+          <b:widget id='Image101' locked='true' title='사이트 정보' type='Image' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjpjs1o9IoceLdRkd7jcGM9qRbWMkdqlkBVs4bGzEW_bputkkju1lTGG5mheHFkcarzIBaLft-68WX8CjngmDlSN7BGe12dTvRFWvW5ibg-812VvmDiIy8kPWxe0lECBSK3wRijLHNnprMpPCv6nudl_mVoyavEDUIWgdJWdcJKVApCVX7BE9IzCpCL_gEW=s1600</b:widget-setting>
-              <b:widget-setting name='displayHeight'>317</b:widget-setting>
+              <!-- 사용자 안내: 푸터 로고 이미지 URL입니다. 필요에 따라 수정하세요. -->
+              <b:widget-setting name='displayUrl'>https://via.placeholder.com/150x50?text=Footer+Logo</b:widget-setting>
+              <b:widget-setting name='displayHeight'>50</b:widget-setting>
               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
               <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-              <b:widget-setting name='displayWidth'>1600</b:widget-setting>
+              <b:widget-setting name='displayWidth'>150</b:widget-setting>
               <b:widget-setting name='link'>/</b:widget-setting>
-              <b:widget-setting name='caption'>함께 걸어요, 건강한 정신으로 가는 길</b:widget-setting>
+              <!-- 사용자 안내: 블로그나 사이트에 대한 짧은 소개를 입력하세요. -->
+              <b:widget-setting name='caption'>이곳에 블로그 또는 사이트 설명을 입력하세요.</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -6531,13 +6536,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // KakaoTalk Share SDK (already DOMContentLoaded wrapped)
   if (typeof Kakao !== 'undefined') {
-    // Kakao.init('YOUR_KAKAO_JS_KEY'); // 사용자가 직접 입력하도록 안내
+    var kakaoJsKey = ''; // YOUR_KAKAO_JS_KEY // 사용자 안내: 여기에 카카오 JavaScript 키를 입력하세요. 키가 없으면 카카오 공유 기능이 작동하지 않습니다.
+    if (kakaoJsKey && kakaoJsKey !== '' && kakaoJsKey !== 'YOUR_KAKAO_JS_KEY') {
+      Kakao.init(kakaoJsKey);
+    }
+
     var shareUrl = window.location.href;
     var shareTitle = document.title;
     var kakaoButton = document.getElementById('kakao-link-btn'); // Assuming a button with this ID exists
-    if (kakaoButton && typeof Kakao !== 'undefined' && Kakao.isInitialized()) { // Kakao SDK 초기화 확인
+    if (kakaoButton && typeof Kakao !== 'undefined' && Kakao.isInitialized()) {
         Kakao.Link.createDefaultButton({
-          container: '#kakao-link-btn',
+          container: '#kakao-link-btn', // 실제 버튼 컨테이너 ID로 변경 필요
           objectType: 'feed',
           content: {
             title: shareTitle,
@@ -6694,15 +6703,19 @@ window.addEventListener(&#39;scroll&#39;, myBar);
 <script>
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   if (typeof Kakao !== &#39;undefined&#39;) {
-    // Kakao.init(&#39;YOUR_KAKAO_JS_KEY&#39;); // 사용자가 직접 입력하도록 안내
+    var kakaoJsKey = ''; // YOUR_KAKAO_JS_KEY // 사용자 안내: 여기에 카카오 JavaScript 키를 입력하세요. 키가 없으면 카카오 공유 기능이 작동하지 않습니다.
+    if (kakaoJsKey && kakaoJsKey !== '' && kakaoJsKey !== 'YOUR_KAKAO_JS_KEY') {
+      Kakao.init(kakaoJsKey);
+    }
+
     // Kakao SDK가 초기화되었는지 확인 후 버튼 생성
-    if (Kakao.isInitialized()) {
+    if (typeof Kakao !== 'undefined' && Kakao.isInitialized()) {
         var shareUrl = window.location.href;
         var shareTitle = document.title;
         var kakaoButton = document.getElementById('kakao-link-btn'); // 버튼 ID 확인 필요
         if (kakaoButton) {
             Kakao.Link.createDefaultButton({
-              container: '#kakao-link-btn',
+              container: '#kakao-link-btn', // 실제 버튼 컨테이너 ID로 변경 필요
               objectType: 'feed',
               content: {
                 title: shareTitle,
