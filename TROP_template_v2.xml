@@ -3266,8 +3266,8 @@ body#layout #hidden-widgets{display:none!important}
 <!-- End AMP alternate -->
 
 <!-- Prism.js Syntax Highlighting -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.33.0/themes/prism.min.css'/>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.33.0/prism.min.js' defer='defer'></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css'/>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js' defer='defer'></script>
 <!-- End Prism -->
 
 <meta name='robots' content='index,follow,max-image-preview:large'/>
