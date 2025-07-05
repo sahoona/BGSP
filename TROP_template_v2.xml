@@ -2832,7 +2832,8 @@ body#layout #hidden-widgets{display:none!important}
              <a class='tn-prev' href='javascript:;' role='button' aria-label='이전 인기 게시물'/>
              <a class='tn-next' href='javascript:;' role='button' aria-label='다음 인기 게시물'/>
           </div>
-          <b:elseif cond='data:widget.sectionId == &quot;featured&quot;'/>
+        </b:if>
+        <b:if cond='data:widget.sectionId == &quot;featured&quot;'>
           <div class='featured-items'>
               <b:loop index='i' values='data:posts' var='post'>
                   <div expr:class='&quot;featured-item cs item-&quot;+data:i'>
