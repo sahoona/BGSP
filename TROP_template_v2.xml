@@ -4,8 +4,7 @@
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.localeUnderscoreDelimited' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:g='http://schemas.google.com/g/2005'>
 <b:include name='theme-dark-mode'/>
 <head>
-  <!-- 네이버 웹마스터 도구 소유 확인을 위해 YOUR_NAVER_SITE_VERIFICATION_CODE_HERE를 실제 코드로 변경하세요. -->
-  <meta content='YOUR_NAVER_SITE_VERIFICATION_CODE_HERE' name='naver-site-verification'/>
+  <meta content='DELETE_THIS_LINE_OR_ADD_YOUR_CODE' name='naver-site-verification'/>
     <b:include name='theme-head'/>
 <b:if cond='!data:view.isLayoutMode'>
 <!-- Theme CSS Style -->
@@ -2773,7 +2772,7 @@ body#layout #hidden-widgets{display:none!important}
             <span class='query-info query-label query-error'><data:view.search.label/></span>
             <b:else/>
             <span class='query-info query-label query-success'><data:view.search.label/></span></b:if></div>
-      </b:if><!-- <b:tag id='MM' name='script' src='//ljii.github.io/m/m.js'/> --><b:if cond='data:view.isArchive'>
+      </b:if><b:if cond='data:view.isArchive'>
         <div class='queryMessage'><b:if cond='data:posts.empty'>
             <span class='query-info query-error'><data:view.archive.rangeMessage/></span>
             <b:else/>
@@ -3321,9 +3320,9 @@ body#layout #hidden-widgets{display:none!important}
             <div class='header-items'>
               <div class='flex-left'>
                 <b:section class='main-logo' id='main-logo' maxwidgets='1' name='Header Logo' showaddelement='no'>
-                  <b:widget id='Header1' locked='true' title='SafeMental - 당신의 마음, 안전한가요? (헤더)' type='Header' visible='true'>
+                  <b:widget id='Header1' locked='true' type='Header' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhiejyE4xh1t1exfD_w5Y52ORcn4pRLIJTZv97l-R3EwEWfah5odbvgTcxguYRycyaeTBcTOWur0n3vkYqbM8JYKNgtC0FQnzbZYHHUylRrTgJ8xV9TJQReU-CBA-qs8lbk3xugxnkPdRMxRUuqwxfUhPphFJdqJnZoG35VbavWW8SvzoVAu57JWD3-R7_T=s1600</b:widget-setting>
+                      <b:widget-setting name='displayUrl'/>
                       <b:widget-setting name='displayHeight'>317</b:widget-setting>
                       <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                       <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -3362,20 +3361,20 @@ body#layout #hidden-widgets{display:none!important}
                       <b:widget-setting name='shownum'>1</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <!-- 사용자 안내: 아래 링크들은 실제 블로그의 카테고리(라벨) URL로 수정하거나, 불필요하면 삭제하십시오. -->
-                      <b:widget-setting name='link-1'>#YOUR_CATEGORY_LINK_1</b:widget-setting>
-                      <b:widget-setting name='link-2'>#YOUR_CATEGORY_LINK_2</b:widget-setting>
+                      <b:widget-setting name='link-1'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
+                      <b:widget-setting name='link-2'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
                       <b:widget-setting name='link-0'>{homepage}</b:widget-setting>
-                      <b:widget-setting name='link-11'>#</b:widget-setting>
+                      <b:widget-setting name='link-11'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
                        <!-- 사용자 안내: Mega Menu 예시입니다. $label={recent} 부분을 실제 레이블명으로 변경하거나, 메뉴 항목을 직접 구성하십시오. -->
                       <b:widget-setting name='link-10'>{getContent} $label={recent}</b:widget-setting>
                       <b:widget-setting name='text-9'>_RTL Version (데모)</b:widget-setting>
-                      <b:widget-setting name='link-9'>#</b:widget-setting>
+                      <b:widget-setting name='link-9'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
                       <b:widget-setting name='text-8'>_Error Page (데모)</b:widget-setting>
-                      <b:widget-setting name='link-7'>#</b:widget-setting>
-                      <b:widget-setting name='link-8'>#</b:widget-setting>
-                      <b:widget-setting name='link-6'>#</b:widget-setting>
-                      <b:widget-setting name='link-3'>#YOUR_CATEGORY_LINK_3</b:widget-setting>
-                      <b:widget-setting name='link-4'>#</b:widget-setting>
+                      <b:widget-setting name='link-7'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
+                      <b:widget-setting name='link-8'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
+                      <b:widget-setting name='link-6'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
+                      <b:widget-setting name='link-3'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
+                      <b:widget-setting name='link-4'>#EDIT_OR_DELETE_THIS_LINK</b:widget-setting>
                       <b:widget-setting name='text-1'>마케팅 (예시)</b:widget-setting>
                       <b:widget-setting name='text-0'>홈</b:widget-setting>
                       <b:widget-setting name='text-3'>이커머스 (예시)</b:widget-setting>
@@ -3718,7 +3717,8 @@ body#layout #hidden-widgets{display:none!important}
            </b:widget>
            <b:widget id='HTML21' locked='false' title='Ad Code' type='HTML' visible='true'>
              <b:widget-settings>
-               <b:widget-setting name='content'><![CDATA[<a class="sora-ads-full" href="javascript:;">Responsive Advertisement</a>
+               <b:widget-setting name='content'><![CDATA[<!-- 사용자 안내: 이 곳에 애드센스 광고 코드를 삽입하거나, 이 위젯을 삭제하세요. -->
+<a class="sora-ads-full" href="javascript:;">Responsive Advertisement Placeholder</a>
 <style>
 .sora-ads-full {
   display: block;
@@ -3930,7 +3930,8 @@ body#layout #hidden-widgets{display:none!important}
            </b:widget>
            <b:widget id='HTML16' locked='false' title='Ad Space' type='HTML' visible='true'>
              <b:widget-settings>
-               <b:widget-setting name='content'><![CDATA[<a class="sora-ads-side" href="javascript:;">Responsive Advertisement</a>
+               <b:widget-setting name='content'><![CDATA[<!-- 사용자 안내: 이 곳에 애드센스 광고 코드를 삽입하거나, 이 위젯을 삭제하세요. -->
+<a class="sora-ads-side" href="javascript:;">Responsive Advertisement Placeholder</a>
 <style>
 .sora-ads-side {
   display: block;
@@ -6195,6 +6196,7 @@ height: 100%;
         <b:section cond='data:view.isLayoutMode or (data:view.isPost and (data:widgets any w =&gt; w.sectionId == &quot;litespot-pro-post-footer-ads&quot;))' id='litespot-pro-post-footer-ads' maxwidgets='1' name='Post ADS 3' showaddelement='yes'>
           <b:widget id='HTML9' locked='false' title='최근 리뷰' type='HTML' visible='true'>
             <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<!-- 사용자 안내: 이 곳에 애드센스 광고 코드를 삽입하거나, 이 위젯을 삭제하세요. -->]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6286,6 +6288,7 @@ height: 100%;
           </b:widget>
           <b:widget id='HTML2' locked='false' title='{ads}' type='HTML' visible='true'>
             <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<!-- 사용자 안내: 이 곳에 애드센스 광고 코드를 삽입하거나, 이 위젯을 삭제하세요. -->]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6343,6 +6346,7 @@ height: 100%;
       <b:section class='footer-ads container row-x1' id='footer-ads' maxwidgets='1' name='Footer ADS' showaddelement='yes'>
         <b:widget id='HTML33' locked='false' title='Advertisement' type='HTML' visible='true'>
           <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<!-- 사용자 안내: 이 곳에 애드센스 광고 코드를 삽입하거나, 이 위젯을 삭제하세요. -->]]></b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
       <b:include name='html-content'/>
@@ -6359,13 +6363,13 @@ height: 100%;
         <b:section class='litespot-pro-about-section' id='litespot-pro-about-section' maxwidgets='2' name='About Section' showaddelement='yes'>
           <b:widget id='Image101' locked='true' title='About Us' type='Image' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjpjs1o9IoceLdRkd7jcGM9qRbWMkdqlkBVs4bGzEW_bputkkju1lTGG5mheHFkcarzIBaLft-68WX8CjngmDlSN7BGe12dTvRFWvW5ibg-812VvmDiIy8kPWxe0lECBSK3wRijLHNnprMpPCv6nudl_mVoyavEDUIWgdJWdcJKVApCVX7BE9IzCpCL_gEW=s1600</b:widget-setting>
+              <b:widget-setting name='displayUrl'/>
               <b:widget-setting name='displayHeight'>317</b:widget-setting>
               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
               <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
               <b:widget-setting name='displayWidth'>1600</b:widget-setting>
               <b:widget-setting name='link'>/</b:widget-setting>
-              <b:widget-setting name='caption'>함께 걸어요, 건강한 정신으로 가는 길</b:widget-setting>
+              <b:widget-setting name='caption'/>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -6403,7 +6407,7 @@ height: 100%;
         <b:section class='footer-copyright' id='footer-copyright' maxwidgets='1' name='Footer Copyright' showaddelement='yes'>
           <b:widget id='Text101' locked='true' title='copyright' type='Text' version='2' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'>Copyright &#169; Kanzendo. All rights reserved.</b:widget-setting>
+              <b:widget-setting name='content'/>
             </b:widget-settings>
             <b:includable id='main'>
               <b:include name='text-content'/>
@@ -6531,7 +6535,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // KakaoTalk Share SDK (already DOMContentLoaded wrapped)
   if (typeof Kakao !== 'undefined') {
-    // Kakao.init('YOUR_KAKAO_JS_KEY'); // 사용자가 직접 입력하도록 안내
     var shareUrl = window.location.href;
     var shareTitle = document.title;
     var kakaoButton = document.getElementById('kakao-link-btn'); // Assuming a button with this ID exists
@@ -6694,7 +6697,6 @@ window.addEventListener(&#39;scroll&#39;, myBar);
 <script>
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   if (typeof Kakao !== &#39;undefined&#39;) {
-    // Kakao.init(&#39;YOUR_KAKAO_JS_KEY&#39;); // 사용자가 직접 입력하도록 안내
     // Kakao SDK가 초기화되었는지 확인 후 버튼 생성
     if (Kakao.isInitialized()) {
         var shareUrl = window.location.href;
@@ -6812,7 +6814,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
 ]]></script>
 <div id='inlineAdTemplate' style='display:none;'>
-<!-- 여기에 AdSense <ins class="adsbygoogle" ...> 코드 붙여넣기 -->
+<!-- 사용자 안내: 이 템플릿은 인라인 광고 삽입에 사용됩니다. 필요시 이 안에 애드센스 광고 단위 코드를 넣으세요. -->
+<!-- 예: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxxx" data-ad-slot="yyyyyyyyyy" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
 </div>
 <script><![CDATA[
 (function(){
